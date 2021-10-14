@@ -12,7 +12,7 @@
 ##目录
 
 ```
-├── components
+├── components                                  //组件
 │   ├── Common
 │   │   ├── CollapseItems
 │   │   │   └── Input
@@ -32,18 +32,18 @@
 │   │   └── FormInput
 │   ├── Pops
 │   └── RoutePrivate
-├── config
-├── container
-├── mock
-├── pages
+├── config                                  //配置 window
+├── container                               //高阶组件，包装器
+├── mock                                    //fetchMock ApiServer
+├── pages                                   //页面
 │   ├── Home
 │   │   ├── Components
 │   │   ├── Dashboard
 │   │   ├── UserList
 │   │   └── UserStruct
 │   └── Login
-├── redux
-│   ├── actions
+├── redux                                   //redux
+│   ├── actions                             //actions ApiClinet
 │   │   ├── Home
 │   │   │   ├── Common
 │   │   │   ├── Components
@@ -53,7 +53,7 @@
 │   │   ├── Login
 │   │   ├── Pops
 │   │   └── System
-│   └── reducers
+│   └── reducers                            //store
 │       ├── Home
 │       │   ├── Common
 │       │   ├── Components
@@ -62,7 +62,7 @@
 │       │   └── UserStruct
 │       ├── Pops
 │       └── System
-└── static
+└── static                                 //静态文件
     ├── Background
     ├── Header
     └── Logo
