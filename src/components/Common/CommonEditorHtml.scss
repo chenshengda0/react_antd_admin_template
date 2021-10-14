@@ -1,0 +1,24 @@
+@import "../../config/Common.scss";
+
+.CommonEditorHtmlComponent{
+
+    .content{
+        .content_row_one{
+            height:50px;
+            line-height: 50px;
+            font-size: 17px;
+            font-weight: 800;
+            padding-left: 10px;
+        }
+
+        .content_row_two{
+            min-height: 200px;
+            line-height: 20px;
+            padding: 16px;
+            font-size: 12px;
+            font-weight: 300;
+            word-break:break-all;
+            @include boxShadow();
+        }
+    }
+}

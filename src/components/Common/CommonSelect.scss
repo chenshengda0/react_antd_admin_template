@@ -1,0 +1,25 @@
+@import "../../config/Common.scss";
+
+.CommonSelectComponent{
+    height:80px;
+    .content{
+        height:80px;
+        .content_row_one{
+            height:30px;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 800;
+            color: $myColorGreen;
+        }
+
+        .content_row_two{
+            height:50px;
+            background:#eee;
+            .content_row_two_select{
+                @include centerDiv;
+                width:100%;
+                color:$myColorRed;
+            }
+        }
+    }
+}

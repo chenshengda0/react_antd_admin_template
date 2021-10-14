@@ -1,0 +1,26 @@
+@import "../../../../../config/Common.scss";
+
+.HomeComponentsCommonButtonComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_row_one{
+
+        }
+
+        .content_row_two{
+
+        }
+
+        .content_row_three{
+            height:50px;
+            .content_row_three_btn{
+                position: absolute;
+                top:50%;
+                right:0px;
+                width:50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../../config/Common.scss";
+
+.HomeUserStructSearchFormComponent{
+    background: #EEE;
+    border-radius: 6px;
+    .content{
+        .content_text{
+            height:50px;
+            .content_text_input{
+                width:80%;
+                @include centerDiv;
+            }
+        }
+
+        .content_col_two{
+            height:50px;
+            .content_col_two_btn{
+                width:100px;
+                @include centerDiv;
+            }
+        }
+    }
+}

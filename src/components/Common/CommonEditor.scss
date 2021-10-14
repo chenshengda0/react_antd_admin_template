@@ -1,0 +1,11 @@
+@import "../../config/Common.scss";
+
+.CommonEditorComponent{
+    width: 100%;
+    height:100%;
+    @include boxShadow();
+
+    .editorDiv{
+        height:"calc(100% - 110px)",
+    }
+}

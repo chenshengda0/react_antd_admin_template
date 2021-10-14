@@ -1,0 +1,19 @@
+@import "../../../config/Common.scss";
+
+.CommonHandleUserListComponent{
+    .content{
+        .content_col_one{
+            text-align: center;
+            .content_col_one_icon{
+                font-size: 20px;
+            }
+        }
+
+        .content_col_two{
+            text-align: center;
+            .content_col_two_icon{
+                font-size: 20px;
+            }
+        }
+    }
+}

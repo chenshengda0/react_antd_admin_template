@@ -1,0 +1,44 @@
+//变量
+$myColorRed : #eb2f96;
+$myColorBlue : #1890FF;
+$myColorGreen : #52c41a;
+$myColorBlack : #333;
+
+//space
+@mixin spaceDiv($height:"3px",$color: "#eee"){
+    height: #{$height};
+    position: absolute;
+    left: 50%;
+    bottom:#{$height};
+    transform: translateX(-50%);
+    width:100%;
+    background: #{$color};
+    border-radius: #{$height};    
+}
+
+//div居中
+@mixin centerDiv{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+//动画
+@mixin spin-animation($name:"sidebar-logo-spin") {
+    @at-root {
+        @keyframes #{$name} {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }    
+}
+
+//阴影
+@mixin boxShadow($color: $myColorRed){
+    box-shadow:0px 3px 6px 0px $color;
+}

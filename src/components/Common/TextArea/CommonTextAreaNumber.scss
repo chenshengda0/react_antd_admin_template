@@ -1,0 +1,27 @@
+@import "../../../config/Common.scss";
+
+.CommonTextAreaNumberComponent{
+    height:80px;
+    .row_one{
+        height:30px;
+        .row_one_col_one{
+            height:30px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 5px;
+            color: $myColorGreen;
+        }
+    }
+
+    .row_two{
+        height:50px;
+        background:#eee;
+        .row_two_col_one{
+            height:50px;
+            .row_two_col_one_textarea{
+                width:100%;
+                @include centerDiv;
+            }
+        }
+    }
+}

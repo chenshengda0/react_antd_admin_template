@@ -1,0 +1,66 @@
+@import "../../../config/Common";
+.HomeCommonHeaderComponent{
+    .content{
+        .content_col_one{
+            .content_col_one_icon{
+                height:64px;
+                line-height: 64px;
+                width:100%;
+                font-size: 20px;
+            }
+        }
+
+        .content_col_two{
+            .ant-breadcrumb{
+                height:64px;
+                line-height: 64px;
+                overflow: hidden;
+            }
+        }
+
+        .content_col_three{
+
+        }
+
+        .content_col_four{
+            height:64px;
+            line-height: 64px;
+            text-align: center;
+            .content_col_four_icon{
+                font-size: 20px;
+            }
+        }
+
+        .content_col_five{
+            height:64px;
+            line-height: 64px;
+            text-align: center;
+            .content_col_five_icon{
+                font-size: 20px;
+            }
+        }
+
+        .content_col_six{
+            .content_col_six_box{
+                .content_col_six_box_col_one{
+                    height:64px;
+                    img{
+                        width:36px;
+                        height:36px;
+                        @include centerDiv;
+                    }
+                }
+                .content_col_six_box_col_two{
+                    height:64px;
+                    line-height: 20px;
+                    padding-top: 22px;
+                    text-align: center;
+                    .content_col_six_box_col_two_icon{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+    }
+}

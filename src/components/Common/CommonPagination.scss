@@ -1,0 +1,17 @@
+@import "../../config/Common.scss";
+
+.CommonPaginationComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_row_one{
+            height:50px;
+            .pagination{
+                width:100%;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

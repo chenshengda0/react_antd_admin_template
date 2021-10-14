@@ -1,0 +1,17 @@
+@import "../../../config/Common.scss";
+
+.LoginFormHandleButtonComponent{
+    height:50px;
+    width:80%;
+    margin-left: 10%;
+    .content{
+        height:50px;
+        .content_row_one{
+            height:50px;
+            .content_row_one_handle{
+                width:94%;
+                @include centerDiv;
+            }
+        }
+    }
+}

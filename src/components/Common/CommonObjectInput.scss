@@ -1,0 +1,40 @@
+@import "../../config/Common";
+.CommonObjectInputComponent{
+    .content{
+        .content_title{
+            height:30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 800;
+            color: $myColorGreen;
+        }
+
+        .content_list{
+            .box{
+                height:50px;
+                margin-top: 3px;
+                background:#eee;
+                border-radius: 6px;
+                .box_row_one{
+                    height:50px;
+                    line-height: 50px;
+                    font-size: 14px;
+                    color:$myColorBlue;
+                    font-weight: 500;
+                    padding-left: 10px;
+                    overflow: hidden;
+                    background:#ccc;
+                    border-radius: 6px;
+                }
+
+                .bow_row_two{
+                    height:50px;
+                    .input_box{
+                        @include centerDiv;
+                        color:$myColorRed;
+                    }
+                }
+            }
+        }
+    }
+}

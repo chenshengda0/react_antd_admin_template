@@ -1,0 +1,38 @@
+@import "../../../config/Common.scss";
+
+.CommonTextAreaIconComponent{
+    height:180px;
+    .row_one{
+        height:30px;
+        .row_one_col_one{
+            height:30px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 5px;
+            color: $myColorGreen;
+        }
+    }
+
+    .row_two{
+        height:150px;
+        background:#eee;
+        .row_two_col_one{
+            height:150px;
+            .avatar-uploader{
+                height:150px;
+                .ant-upload {
+                    width: 130px;
+                    height: 130px;
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    img{
+                        width:130px;
+                        height:130px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

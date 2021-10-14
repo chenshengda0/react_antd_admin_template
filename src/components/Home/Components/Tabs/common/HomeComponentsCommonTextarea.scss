@@ -1,0 +1,37 @@
+@import "../../../../../config/Common.scss";
+
+.HomeComponentsCommonTextareaComponent{
+    height:100px;
+    background: #EEE;
+    border-radius: 6px;
+    .content{
+        height:50px;
+        .content_col_one{
+            height:50px;
+            line-height: 50px;
+            text-align: right;
+            padding-right: 10px;
+            color: $myColorGreen;
+            font-weight: 800;
+        }
+
+        .content_col_two{
+            height:100px;
+            .content_col_two_input{
+                @include centerDiv;
+                width:100%;
+                color:$myColorRed;
+            }
+           
+        }
+
+        .content_col_three{
+            height:50px;
+            line-height: 50px;
+            font-weight: 800;
+            color:#ccc;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+}

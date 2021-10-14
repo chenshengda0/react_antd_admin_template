@@ -1,0 +1,24 @@
+@import "../../config/Common";
+.CommonInputComponent{
+    height:80px;
+    .content{
+        height:80px;
+        .content_row_one{
+            height:30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 800;
+            color:$myColorGreen;
+            text-align: left;
+        }
+
+        .content_row_two{
+            height:50px;
+            background:#eee;
+            input{
+                @include centerDiv;
+                color:$myColorRed;
+            }
+        }
+    }
+}

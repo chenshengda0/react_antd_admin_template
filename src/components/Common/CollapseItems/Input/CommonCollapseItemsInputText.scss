@@ -1,0 +1,14 @@
+@import "../../../../config/Common.scss";
+.CommonCollapseItemsInputTextComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_col_one{
+            height:50px;
+            .content_col_one_text{
+                width:80%;
+                @include centerDiv;
+            }
+        }
+    }
+}

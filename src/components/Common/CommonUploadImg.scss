@@ -1,0 +1,36 @@
+@import "../../config/Common.scss";
+
+.CommonUploadImgComponent{
+    height:180px;
+    .row_one{
+        height:30px;
+        .row_one_content{
+            height:30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 800;
+            color: $myColorGreen,
+        }
+    }
+
+    .row_two{
+        height:150px;
+        .row_two_content{
+            height:150px;
+            .avatar-uploader{
+                height:150px;
+                .ant-upload {
+                    width: 130px;
+                    height: 130px;
+                    @include centerDiv;
+                    img{
+                        width:100%;
+                        height:100%;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+@import "../../config/Common";
+.CommonHandleButtonComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_row_one{
+            height:50px;
+            .handleBtn{
+                @include centerDiv;
+                width:100%;
+            }
+        }
+    }
+}

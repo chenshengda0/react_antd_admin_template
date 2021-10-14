@@ -1,0 +1,34 @@
+@import "../../../config/Common.scss";
+
+.CommonCollapseItemsExcelComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_col_one{
+            height:50px;
+            line-height: 50px;
+        }
+
+        .content_col_two{
+            height:50px;
+            .content_col_two_text{
+                @include centerDiv;
+            }
+        }
+
+        .content_col_three{
+            height:50px;
+            .content_col_three_btn{
+                @include centerDiv;
+            }
+        }
+
+        .content_col_four{
+            height:50px;
+            .content_col_four_btn{
+                @include centerDiv;
+            }
+        }
+
+    }
+}

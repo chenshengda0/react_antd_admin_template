@@ -1,0 +1,14 @@
+@import "../../config/Common.scss";
+.CommonSpaceComponent{
+    height:20px;
+    .box{
+        height:20px;
+        .box_row_one{
+            height:20px;
+            width:100%;
+            .content{
+                @include spaceDiv();
+            }
+        }
+    }
+}

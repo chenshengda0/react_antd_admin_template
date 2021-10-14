@@ -1,0 +1,38 @@
+@import "../../../../../config/Common.scss";
+
+.HomeComponentsCommonSwitchComponent{
+    height:50px;
+    background: #EEE;
+    border-radius: 6px;
+    .content{
+        height:50px;
+        .content_col_one{
+            height:50px;
+            line-height: 50px;
+            text-align: right;
+            padding-right: 10px;
+            color: $myColorGreen;
+            font-weight: 800;
+        }
+
+        .content_col_two{
+            height:50px;
+            .content_col_two_switch{
+                position: absolute;
+                top: 50%;
+                left:10px;
+                transform: translateY(-50%);
+            }
+           
+        }
+
+        .content_col_three{
+            height:50px;
+            line-height: 50px;
+            font-weight: 800;
+            color:#ccc;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+}

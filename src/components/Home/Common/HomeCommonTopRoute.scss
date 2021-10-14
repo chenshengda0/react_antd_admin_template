@@ -1,0 +1,25 @@
+@import "../../../config/Common";
+.HomeCommonTopRouteComponent{
+    height:40px;
+    white-space: nowrap;
+    .item{
+        display: inline-block;
+        height:30px;
+        line-height: 30px;
+        background:#fffbe6;
+        margin-left: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 5px;
+        border-radius: 6px;
+        font-size: 14px;
+        color:#faad14;
+        border-color: #000;
+    }
+
+    .active{
+        background:#f0f5ff;
+        color:#2f54eb;
+        border-color: #000;
+    }
+}

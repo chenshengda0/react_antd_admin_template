@@ -1,0 +1,53 @@
+@import "../../../config/Common";
+.HomeDashboardTopListComponent{
+    .content{
+        height:140px;
+        background:#FFF;
+        border-radius: 6px;
+        
+        .content_box{
+            @include boxShadow;
+            height:120px;
+            margin-top: 10px;
+            width:80%;
+            margin-left: 10%;
+            .content_box_col_one{
+                height:120px;
+                line-height: 120px;
+                text-align: center;
+                .icon{
+                    font-size: 50px;
+                    position: absolute;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            .content_box_col_two{
+                height:120px;
+                .content_box_col_right{
+                    height:120px;
+                    .content_box_col_right_row_one{
+                        margin-top: 20px;
+                        height:40px;
+                        line-height: 40px;
+                        font-size: 16px;
+                        font-weight: 800;
+                        color:#ccc;
+                        text-align: center;
+                    }
+
+                    .content_box_col_right_row_two{
+                        height:60px;
+                        line-height: 40px;
+                        font-size: 11px;
+                        text-align: center;
+                        color:#333;
+                        font-weight: 800;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

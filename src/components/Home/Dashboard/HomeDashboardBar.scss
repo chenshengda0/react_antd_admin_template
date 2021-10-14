@@ -1,0 +1,22 @@
+@import "../../../config/Common";
+.HomeDashboardBarComponent{
+    .content{
+        height:500px;
+        width:94%;
+        margin-left: 3%;
+        .content_row_one{
+            height:60px;
+            padding-top: 20px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 800;
+            color:#333;
+        }
+
+        .content_row_two{
+            height:440px;
+            width:100%;
+            @include boxShadow;
+        }
+    }
+}

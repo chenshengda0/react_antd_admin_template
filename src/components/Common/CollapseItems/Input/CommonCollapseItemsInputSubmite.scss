@@ -1,0 +1,13 @@
+@import "../../../../config/Common.scss";
+.CommonCollapseItemsInputSubmiteComponent{
+    height:50px;
+    .content{
+        height:50px;
+        .content_col_one{
+            height:50px;
+            .content_col_one_text{
+                @include centerDiv;
+            }
+        }
+    }
+}

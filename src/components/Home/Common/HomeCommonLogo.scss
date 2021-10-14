@@ -1,0 +1,29 @@
+@import "../../../config/Common";
+@include spin-animation("sidebar-logo-spin");
+.HomeCommonLogoComponent{
+    height:40px;
+    width:100%;
+    padding: 12px 10%;
+    .row_one{
+        height:40px;
+        background:rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+        .row_one_col_one{
+            animation: sidebar-logo-spin infinite 8s linear;
+            height:40px;
+            img{
+                width:40px;
+                @include centerDiv;
+            }
+        }
+        .row_one_col_two{
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 800;
+            color:#FFF;
+            text-shadow:0 0 2px $myColorRed;
+        }
+    }
+}
