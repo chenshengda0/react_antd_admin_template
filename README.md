@@ -7,3 +7,64 @@
   >$ yarn start
   
 ```
+
+
+##目录
+
+```
+├── components
+│   ├── Common
+│   │   ├── CollapseItems
+│   │   │   └── Input
+│   │   ├── Handle
+│   │   │   └── Modals
+│   │   ├── Markdown
+│   │   └── TextArea
+│   ├── Home
+│   │   ├── Common
+│   │   ├── Components
+│   │   │   └── Tabs
+│   │   │       └── common
+│   │   ├── Dashboard
+│   │   └── UserStruct
+│   ├── Login
+│   │   ├── FormHandle
+│   │   └── FormInput
+│   ├── Pops
+│   └── RoutePrivate
+├── config
+├── container
+├── mock
+├── pages
+│   ├── Home
+│   │   ├── Components
+│   │   ├── Dashboard
+│   │   ├── UserList
+│   │   └── UserStruct
+│   └── Login
+├── redux
+│   ├── actions
+│   │   ├── Home
+│   │   │   ├── Common
+│   │   │   ├── Components
+│   │   │   ├── Dashboard
+│   │   │   ├── UserList
+│   │   │   └── UserStruct
+│   │   ├── Login
+│   │   ├── Pops
+│   │   └── System
+│   └── reducers
+│       ├── Home
+│       │   ├── Common
+│       │   ├── Components
+│       │   ├── Dashboard
+│       │   ├── UserList
+│       │   └── UserStruct
+│       ├── Pops
+│       └── System
+└── static
+    ├── Background
+    ├── Header
+    └── Logo
+
+```
