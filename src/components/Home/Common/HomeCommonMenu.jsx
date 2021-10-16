@@ -7,6 +7,7 @@ import {
     SetHomeCommonTopRouteDataAction,
 } from "../../../redux/actions"
 import {DragDropContext,Draggable,Droppable} from "react-beautiful-dnd"
+import * as iconMap from '@ant-design/icons';
 
 
 const {SubMenu} = Menu;
@@ -50,11 +51,12 @@ class HomeCommonMenu extends Component{
     treeToMenu=(menuList)=>{
         // 得到当前请求的路由路径
         return menuList.reduce((pre, item) => {
+            const IconComponent = iconMap[item.icon];
             if (!item.children) {
                 pre.push(
                     <Menu.Item key={item.key}>
                         <Link to={item.key}>
-                            {item.icon}
+                            <IconComponent />
                             <span>{item.title}</span>
                         </Link>
                     </Menu.Item>
@@ -66,7 +68,7 @@ class HomeCommonMenu extends Component{
                         key={item.key}
                         title={
                             <span>
-                                {item.icon}
+                                <IconComponent />
                                 <span>{item.title}</span>
                             </span>
                         }

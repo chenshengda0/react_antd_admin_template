@@ -131,6 +131,10 @@ class Add extends Component{
         this.initEditData();
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     initEditData = ()=>{
         const {UserTreeOptionsData} = this.props;
         const {editData,record} = this.state;

@@ -22,30 +22,44 @@ import {
 
 class App extends Component{
 
+  state = {
+    loading : false,
+  }
+
   async componentDidMount(){
+    this.setState({loading:true});
     //初始化菜单
-    this.props.InitSystemMenusDataAction();
+    const resMenus = await this.props.InitSystemMenusDataAction();
 
     //初始化弹出层
-    this.props.InitPopsPopsDataAction();
+    const resPops = await this.props.InitPopsPopsDataAction();
 
     //初始化配置
-    this.props.InitSystemConfigDataAction();
+    const resConfig = await this.props.InitSystemConfigDataAction();
 
     //初始化顶部路由
-    this.props.InitHomeCommonTopRouteDataAction();
+    const resTopList = await this.props.InitHomeCommonTopRouteDataAction();
+
+    if( resMenus && resPops && resConfig && resTopList ){
+      this.setState({loading:false});
+    }
+  }
+
+  componentWillUnmount(){
+    this.setState = ()=>false;
   }
 
   render(){
-    const {SystemMenusData,SystemConfigData,PopsPopsData,HomeCommonTopRouteData} = this.props;
+    const {SystemMenusData} = this.props;
     const current_menus = SystemMenusData.reduce( (pre,item)=>{
-      return item.pid === 0 ? [...pre,item] : [...pre];
+        return item.pid === 0 ? [...pre,item] : [...pre];
     } ,[]);
-    const loading = SystemMenusData.length > 0 && Object.keys(SystemConfigData).length > 0 && Object.keys(PopsPopsData).length > 0 && HomeCommonTopRouteData.length > 0 ? true : false;
+    const {loading:reqLoading} = this.state;
+    const loading = reqLoading || current_menus.length === 0;
     return (
       <>
         {
-          loading 
+          !loading 
           ?
           (
             <Switch>

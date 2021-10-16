@@ -20,6 +20,10 @@ class EditorText extends Component{
         editor : "",
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
       
     render(){
         const {

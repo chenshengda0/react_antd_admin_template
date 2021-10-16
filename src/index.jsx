@@ -4,10 +4,7 @@ import App from './App';
 import {HashRouter} from "react-router-dom";
 import {Provider} from "react-redux"
 import store from "./redux/store"
-import "./config/Common"
-import "./config/encryption"
-import "./config/cookie"
-import "./config/request"
+import "./config"
 import "./mock"
 import {
   ConfigProvider,

@@ -62,8 +62,14 @@ class Home extends Component{
         ],
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     async componentDidMount(){
-        const {pageSize} = this.props.SystemConfigData;
+        const {pageOptions} = this.props.SystemConfigData;
+        const currentSelect = Object.values(pageOptions).find( item=>item.isSelect ) || Object.values(pageOptions)[0]
+        const pageSize = currentSelect.value;
         this.setState({pageSize})
         const res = await this.props.SetUserListDataAction({page:1,pageSize});
         message.success(res);
@@ -132,10 +138,6 @@ class Home extends Component{
             console.log( this.state )
         });
 
-    }
-
-    componentWillUnmount(){
-        this.setState = ()=>false;
     }
 
     render(){

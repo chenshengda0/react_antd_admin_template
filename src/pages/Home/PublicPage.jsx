@@ -38,6 +38,10 @@ class PublicPage extends Component{
         this.setState({current_route})
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     render(){
         const {collapsed,current_route} = this.state;
         //console.log( current_route )

@@ -16,6 +16,11 @@ import {
 } from "../../../components/Home/Dashboard"
 
 class Home extends Component{
+    
+    componentWillUnmount(){
+        this.setState = ()=>false
+    }
+
 
     render(){
         return (

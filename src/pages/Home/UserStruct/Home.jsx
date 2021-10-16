@@ -44,6 +44,10 @@ class Home extends Component{
         });
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     to_search = ()=>{
         try{
             const {

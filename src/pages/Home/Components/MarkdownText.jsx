@@ -14,6 +14,10 @@ import {
 
 class MarkdownText extends Component{
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     render(){
         return (
             <>

@@ -1,26 +1,6 @@
 import * as types from "../../../types"
 import {message} from "antd"
-import {
-    SmileTwoTone,
-    FrownTwoTone,
-    TrademarkCircleTwoTone,
-    RedEnvelopeTwoTone,
-    PropertySafetyTwoTone,
-    SafetyCertificateTwoTone,
-    ShopTwoTone,
-    ShoppingTwoTone,
-} from '@ant-design/icons';
-
-const IconsMap = {
-    "SmileTwoTone" : SmileTwoTone,
-    "FrownTwoTone" : FrownTwoTone,
-    "TrademarkCircleTwoTone" : TrademarkCircleTwoTone,
-    "RedEnvelopeTwoTone" : RedEnvelopeTwoTone,
-    "PropertySafetyTwoTone" : PropertySafetyTwoTone,
-    "SafetyCertificateTwoTone" : SafetyCertificateTwoTone,
-    "ShopTwoTone" : ShopTwoTone,
-    "ShoppingTwoTone" : ShoppingTwoTone,
-}
+import * as IconsMap from '@ant-design/icons';
 
 export const init_home_dashboard_top_list_data = (param={})=>{
     return async(dispatch)=>{

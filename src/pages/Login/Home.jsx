@@ -83,6 +83,10 @@ class Home extends Component{
         this.autoFill();
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     autoFill = ()=>{
         const {record,formData} = this.state;
         const newFormData = Object.keys(formData).reduce( (prev,cur)=>{

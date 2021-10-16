@@ -1,4 +1,161 @@
 const clientApi = {
+    getConfig : {
+        title : "获取配置",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/local/config",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    setConfig : {
+        title : "设置本地配置",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+            reqData : {},
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/local/setConfig",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    getLocalProps : {
+        title : "获取本地弹出层状态",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/local/getProps",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    //本地弹出层
+    setLocalProps : {
+        title : "设置本地弹出层状态",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+            reqObj:{
+                
+            }
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/local/setProps",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    getMenus : {
+        title : "获取本地菜单",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/local/menus",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+
+
+    getRemoteConfig : {
+        title : "获取服务端配置",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/remote/config",    //路径
+            type : "requestAuthPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    setRemoteConfig : {
+        title : "设置服务端配置",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+            reqList : [],
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/remote/setConfig",    //路径
+            type : "requestAuthPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    getTopRouter : {
+        title : "获取顶部菜单",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/router/getTopRoute",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
+    setTopRouter : {
+        title : "设置顶部菜单",           //备注
+        debug: true,                    //调试模式，true --- mock  false --- real 
+        allowParam : {
+            addObj : {},
+        },                //允许的参数
+        mock : {                        //mock
+            prefix : "",                    //mock前缀
+            path : "/mock/router/addTopRoute",    //路径
+            type : "requestPost",       //请求函数
+        },
+        real : {                        //真实请求
+            prefix : "",                    //前缀
+            path : "",                      //路径
+            type : "",                      //请求函数
+        }
+    },
     toLogin : {
         title : "登陆",           //备注
         debug: true,                    //调试模式，true --- mock  false --- real 
@@ -10,7 +167,7 @@ const clientApi = {
         mock : {                        //mock
             prefix : "",                    //mock前缀
             path : "/mock/admin/toLogin",    //路径
-            type : "requestAuthPost",       //请求函数
+            type : "requestPost",       //请求函数
         },
         real : {                        //真实请求
             prefix : "",                    //前缀
@@ -211,6 +368,7 @@ const requestList = {
             let result = await response.json();
             return result;
         }catch(err){
+            //console.log(err);
             throw new Error("网络开小差了，请稍后再试～");
         }
     },

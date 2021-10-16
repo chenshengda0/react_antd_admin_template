@@ -29,7 +29,7 @@ class CommonPagination extends Component{
                                 total={total}
                                 current={page}
                                 pageSize = {pageSize}
-                                pageSizeOptions = {pageOptions.reduce( (prev,item)=>{
+                                pageSizeOptions = {Object.values(pageOptions).reduce( (prev,item)=>{
                                     return [...prev,item.value];
                                 },[] )}
                                 showSizeChanger

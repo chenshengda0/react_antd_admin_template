@@ -35,6 +35,10 @@ class Tree extends Component{
         },
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     async componentDidMount(){
 
         const {UserStructData:showList} = this.props;

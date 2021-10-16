@@ -7,7 +7,6 @@ export const PopsPopsData = (preState=initState,action)=>{
     const {type,data} = action;
     switch(type){
         case types.INIT_POPS_POPS_DATA:
-        case types.SET_POPS_POPS_DATA:
             return {...data};
 
         default :

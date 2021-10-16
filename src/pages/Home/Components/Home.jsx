@@ -44,6 +44,10 @@ class Home extends Component{
         return newResData;
     }
 
+    componentWillUnmount(){
+        this.setState = ()=>false;
+    }
+
     render(){
         const {TestTabsData = []} = this.props;
         const TreeData = this.listToTree(TestTabsData);

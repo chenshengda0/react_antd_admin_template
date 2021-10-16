@@ -2,7 +2,7 @@ import {Component} from "react"
 import {connect} from "react-redux"
 import {withRouter} from "react-router-dom"
 import "./SettingPops.scss"
-import {Drawer} from "antd"
+import {Drawer, message} from "antd"
 import {
     SetPopsPopsDataAction,
     SetSystemConfigDataAction,
@@ -30,7 +30,6 @@ class SettingPops extends Component{
         copyright:"",
         title : "",//标题
         termList:{},
-        pageSize:"",
         payType : {},
     }
 
@@ -55,7 +54,6 @@ class SettingPops extends Component{
             uploadAction,
             title,
             termList,
-            pageSize,
             payType,
             pageOptions,
         } = this.state;
@@ -70,8 +68,9 @@ class SettingPops extends Component{
                             comment : "提交",
                         },
                         {
-                            toHandle : ()=>{
-                                this.props.SetSystemConfigDataAction({...this.state})
+                            toHandle : async()=>{
+                                const data = await this.props.SetSystemConfigDataAction({...this.state})
+                                data && message.success(data);
                                 this.props.SetPopsPopsDataAction({SettingPopsComponentStatus:false});
                             },
                         }
@@ -179,9 +178,8 @@ class SettingPops extends Component{
                                 {},
                                 {
                                     title:"每页默认显示记录数",
-                                    name : "pageSize",
-                                    val : pageSize,
-                                    options : pageOptions,
+                                    name : "pageOptions",
+                                    pageOptions,
                                 },
                                 {
                                     set_form_data : (Obj)=>{
